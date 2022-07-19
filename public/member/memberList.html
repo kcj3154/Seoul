@@ -16,7 +16,7 @@
     		float: left;
     	}
     	
-    	#plus {
+    	#plus, #change {
     		float: right;
     	}
     	
@@ -102,7 +102,7 @@
 			font-size: 20px;
 		}
 		
-		input {
+		.col-md-2 {
 			font-family: '777Balsamtint';
 			font-size: 20px;
 		}
@@ -225,7 +225,7 @@
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
 	      <td>1</td>
-	      <td>김찬중</td>
+	      <td><a href="memberModForm.html">김찬중</td>
 	      <td>남</td>
 	      <td>950531</td>
 	      <td>010-9464-3154</td>
@@ -235,7 +235,7 @@
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
 	      <td>2</td>
-	      <td>이이이</td>
+	      <td><a href="memberModForm.html">이이이</td>
 	      <td>여</td>
 	      <td>970319</td>
 	      <td>010-1111-1111</td>
@@ -245,17 +245,17 @@
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
 	      <td>3</td>
-	      <td>박박박</td>
+	      <td><a href="memberModForm.html">강동원</td>
 	      <td>남</td>
-	      <td>941101</td>
+	      <td>810118</td>
 	      <td>010-2222-2222</td>
-	      <td>parkparkp@naver.com</td>
+	      <td>kdw0118@gmail.com</td>
 	      <td>2021-10-13</td>
 	    </tr>
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
 	      <td>4</td>
-	      <td>최최최</td>
+	      <td><a href="memberModForm.html">최최최</td>
 	      <td>여</td>
 	      <td>990422</td>
 	      <td>010-3333-3333</td>
@@ -265,7 +265,7 @@
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
 	      <td>5</td>
-	      <td>윤윤윤</td>
+	      <td><a href="memberModForm.html">윤윤윤</td>
 	      <td>남</td>
 	      <td>961026</td>
 	      <td>010-4444-4444</td>
@@ -293,8 +293,26 @@
 <br><br><br>
 
 <div class="container-fluid" style="width: 84%;">
-	<button type="button" class="btn btn-dark btn-sm" id="trash"><i class="fa-solid fa-trash-can"></i></button>
+	<button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-dark btn-sm" id="trash"><i class="fa-solid fa-trash-can"></i></button>
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">알림</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        삭제하시겠습니까?
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+		        <button type="button" class="btn btn-primary">삭제</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	<a href="memberRegForm.html"><button type="button" class="btn btn-dark btn-sm" id="plus"><i class="fa-solid fa-plus"></i></button>
+	<a href="memberModForm.html"><button type="button" class="btn btn-dark btn-sm" id="change">수정</button>
 </div>
 
 <!-- end -->
