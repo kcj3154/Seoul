@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    
+    <style type="text/css">
+    		#plus{
+    			float: right;
+    		}
+    </style>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+<!-- start -->
+
+<h3 align="center">교육연수</h3> 
+	<div class="container"><input type="button" class="trainingadd" value="+추가" id="plus"></div>
+	<br><br>
+		<div class="container" style="border: 0.5px solid silver;">
+			<div class="row" align="center" style="background-color:#EBF5FF; height:30px;">
+				<div class="col-3">연수날짜</div>
+				<div class="col-4">연수기관</div>
+				<div class="col-5">연수과정 및 내용</div>
+			</div>
+			<div class="row" align="center" style="margin-top:10px; margin-bottom:10px;">
+				<div class="col-3">
+				<input type="month" class="form-control" style="height:27px; width:140px;" value="2021-08">
+				~<input type="month" class="form-control" style="height:27px; width:140px;" value="2022-11">
+				</div>
+				<div class="col-4"><input type="text" class="form-control" style="height:27px;" value="K-Digital Training Center"></div>
+				<div class="col-5"><input type="text" class="form-control" style="height:27px;" value="새로운 서비스 기획 및 고객 문제 해결"></div>
+			</div>
+		</div><br>
+	
+<!-- end -->
+	
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
