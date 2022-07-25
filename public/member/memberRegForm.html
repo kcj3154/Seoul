@@ -55,8 +55,7 @@
     	#plus {
     		float: right;
     	}
-		
-		
+    	
 		
     </style>
     
@@ -134,7 +133,12 @@
 
 <div class="container-md">
 	<div class="row" align="center">
-		<div class="col-2" style="border: 1px solid silver;"></div>
+		<div class="col-2" style="border: 1px solid silver;">
+			<label htmlFor="imgae-upload">
+				<input id="image-upload" type="file" style=display:none>
+				<img src="./image/file.svg" style=width:180px>
+			</label>
+		</div>
 		<div class="col-10">
 			<div class="row" style="height: 40px; border: 1px solid silver;">
 				<div class="col-2" style="background-color: #f2e3b3; line-height: 35px;" >성명</div>
@@ -214,6 +218,10 @@
 		  </div>
 		</div>
 	<a href="memberRegForm.html"><button type="button" class="btn btn-dark btn-sm" id="plus"><i class="fa-solid fa-plus"></i></button>
+</div>
+
+<div class="container-fluid" style="width: 70%" align="center">
+	<a href="memberList.html"><button type="button"">뒤로가기</button></a>
 </div>
 
 <br><br><br>
