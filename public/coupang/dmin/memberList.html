@@ -51,47 +51,43 @@
 <body>
 
 <!-- start -->
+<div class="container-fluid" style="width: 84%">
+	<a href="../user/main/main.html"><img src="../user/image/cou.jpg" style="width: 200px;"></a>
+</div>
 
-<nav class="navbar fixed-top"">
-  <div class="container-fluid" style="width: 84%">
-    <a class="navbar-brand" href="../user/main/main.html"><img src="../user/image/cou.jpg" style="width: 200px;"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-        	<div class="col-4 col-md-1 mb-2 d-md-block d-none">
-				<div class="row dropdown">
-					<a href="#" class="link-dark text-decoration-none dropdown-toggle ps-0" data-bs-toggle="dropdown">
-								관리자 님
-					</a>
-					<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-						<li><a class="dropdown-item">로그아웃</a></li>
-					</ul>
-				</div></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-    </div>
-  </div>
-</nav>
+<div class="container-fluid" style="width: 84%">
+	<nav class="navbar navbar-expand-lg" style="background-color: #d4e7f8;">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Navbar</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">회원관리</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">서비스관리</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#">사이트관리</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link disabled">로그관리</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</div>
 
-
-
-
-<br><br><br><br><br>
 
 <hr>
-
+<div class="container-fluid" style="width: 84%; font-size: 24px;">코드그룹 관리</div>
+<br>
 <div class="container-fluid" style="width: 84%;">
 	<form class="row g-3 needs-validation" novalidate>
-	  <div class="col-md-1">
-	    <select class="form-select">
-	      <option selected disabled value="">::성별::</option>
-	      <option>남</option>
-	      <option>여</option>
-	    </select>
-	  </div>
 	  <div class="col-md-1">
 	    <select class="form-select">
 	      <option>N</option>
@@ -100,80 +96,148 @@
 	  </div>
 	  <div class="col-md-2">
 	    <select class="form-select">
-	      <option selected disabled value="">선택</option>
-	      <option>아이디</option>
-	      <option>이름</option>
-	      <option>회원등급</option>
+	      <option>수정일</option>
+	      <option>등록일</option>
 	    </select>
 	  </div>
 	  <div class="col-md-2">
-    	<input type="text" class="form-control" placeholder="검색어">
+    	<input type="text" class="form-control" placeholder="시작일">
    	  </div>
+   	  <div class="col-md-2">
+    	<input type="text" class="form-control" placeholder="종료일">
+   	  </div>
+   	  <div class="col-md-2">
+	    <select class="form-select">
+	      <option>검색구분</option>
+	      <option>코드그룹 코드</option>
+	      <option>코드그룹 이름 (한글)</option>
+	      <option>코드그룹 이름 (영문)</option>
+	      <option>코드그룹 코드갯수</option>
+	    </select>
+	  </div>
      <button type="button" class="btn btn-dark btn-sm" style="width: 40px;"><i class="fa-solid fa-magnifying-glass"></i></button>
 	</form>
 </div>
 
 <br><br>
 
+
+<div class="container-fluid" style="width: 84%;">Total: 42</div>
 <div class="container-fluid" style="width: 84%;">	
 	<table class="table table-bordered border-gray">
 	  <thead>
-	    <tr class="table-light" align="center">
+	    <tr class="table bg-dark" align="center" style="color: #ffffff;">
 	      <th scope="col"><input class="form-check-input" type="checkbox"></th>
-	      <th scope="col">NO.</th>
-	      <th scope="col">아이디</th>
-	      <th scope="col">이름</th>
-	      <th scope="col">성별</th>
-	      <th scope="col">회원등급</th>
+	      <th scope="col">#</th>
+	      <th scope="col">코드그룹 코드</th>
+	      <th scope="col">코드그룹 이름 (한글)</th>
+	      <th scope="col">코드그룹 이름 (영문)</th>
+	      <th scope="col">코드갯수</th>
 	      <th scope="col">등록일</th>
+	      <th scope="col">수정일</th>
 	    </tr>
 	  </thead>
 	   <tbody class="table" align="center">
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
-	      <td>1</td>
-	      <td>admin</td>
-	      <td>관리자</td>
-	      <td>남</td>
-	      <td style="color: red;">VIP</td>
-	      <td>2022-08-26</td>
+	      <td>42</td>
+	      <td>49</td>
+	      <td>saifj</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
 	    </tr>
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
-	      <td>2</td>
-	      <td>kcj3154</td>
-	      <td>김찬중</td>
-	      <td>남</td>
-	      <td style="color: red;">VIP</td>
-	      <td>2022-08-26</td>
+	      <td>41</td>
+	      <td>48</td>
+	      <td>asrsaf</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
 	    </tr>
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
-	      <td>3</td>
-	      <td>abcd1</td>
-	      <td>김김김</td>
-	      <td>여</td>
-	      <td>일반</td>
-	      <td>2021-08-26</td>
+	      <td>40</td>
+	      <td>47</td>
+	      <td>123</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
 	    </tr>
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
-	      <td>4</td>
-	      <td>abcd2</td>
-	      <td>박박박</td>
-	      <td>남</td>
-	      <td>일반</td>
-	      <td>2022-08-26</td>
+	      <td>39</td>
+	      <td>39</td>
+	      <td>test19</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
 	    </tr>
 	    <tr>
 	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
-	      <td>5</td>
-	      <td>abcd3</td>
-	      <td>최최최</td>
-	      <td>여</td>
-	      <td>일반</td>
-	      <td>2022-08-26</td>
+	      <td>38</td>
+	      <td>38</td>
+	      <td>test18</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
 	    </tr>
+	    <tr>
+	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
+	      <td>37</td>
+	      <td>37</td>
+	      <td>test17</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
+	     </tr>
+	     <tr>
+	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
+	      <td>36</td>
+	      <td>36</td>
+	      <td>test16</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
+	     </tr>
+	     <tr>
+	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
+	      <td>35</td>
+	      <td>35</td>
+	      <td>test15</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
+	     </tr>
+	     <tr>
+	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
+	      <td>34</td>
+	      <td>34</td>
+	      <td>test15</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
+	     </tr>
+	     <tr>
+	      <th scope="row"><input class="form-check-input" type="checkbox"></th>
+	      <td>33</td>
+	      <td>33</td>
+	      <td>test13</td>
+	      <td></td>
+	      <td>0</td>
+	      <td></td>
+	      <td></td>
+	     </tr>
 	  </tbody>
 	</table>
 </div>
